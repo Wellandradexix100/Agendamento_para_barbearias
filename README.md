@@ -36,13 +36,13 @@ Bem-vindo ao nosso inovador sistema de **agendamento de barbearias e clientes**!
 
 ## 🛠️ **Implementação**
 
-*Este espaço está reservado para detalhes específicos sobre a implementação do sistema. Você pode adicionar informações como a arquitetura do sistema, tecnologias utilizadas, e quaisquer personalizações relevantes aqui.*
+*Em breve*
 
 ### **Tecnologias Utilizadas**
 
-- **Backend:** [Inserir tecnologias backend]
-- **Frontend:** [Inserir tecnologias frontend]
-- **Banco de Dados:** [Inserir banco de dados utilizado]
+- **Backend:** 
+- **Frontend:** 
+- **Banco de Dados:** 
 
 ### **Personalizações e Extensões**
 
@@ -51,17 +51,9 @@ Bem-vindo ao nosso inovador sistema de **agendamento de barbearias e clientes**!
 
 ## 📞 **Entre em Contato**
 
-Para mais informações ou para agendar uma demonstração, entre em contato conosco:
 
-- **Email:** [seu-email@dominio.com](mailto:seu-email@dominio.com)
-- **Telefone:** +55 (11) 99999-9999
-- **Website:** [www.seusite.com](http://www.seusite.com)
 
-Obrigado por considerar nosso sistema de agendamento! Estamos ansiosos para ajudar sua barbearia a alcançar novos patamares de eficiência e satisfação do cliente.
-
----
-
-*Desenvolvido com 💡 e 🚀 por [Seu Nome ou Sua Empresa].*
+*Desenvolvido com 💡 e 🚀 por [Wellandrade].*
 
 
 
