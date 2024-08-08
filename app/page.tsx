@@ -52,7 +52,7 @@ const Home = async () => {
         {/*BANNER*/}
         <div className="relative  h-[200px] w-full">
           <Image
-            src="/Banner01.png"
+            src="/Banner011.png"
             fill
             className="object-cover rounded-xl"
             alt={""}

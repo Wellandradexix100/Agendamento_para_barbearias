@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <Card>
       <CardContent className="p-5 justify-between items-center flex flex-row">
-        <Image src="/logo.png" height={18} width={120} alt={""} />
+        <Image src="/logo1.png" height={18} width={120} alt={""} />
         <Sheet>
           <SheetTrigger asChild>
             <Button size="icon" variant="outline" className="dark-up">

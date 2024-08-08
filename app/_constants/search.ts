@@ -29,3 +29,15 @@ export const quickSearchOptions: QuickSearchOption[] = [
     title: "Hidratação",
   },
 ];
+
+interface GoogleIcon {
+  imageUrl: string;
+  title: string;
+}
+
+export const googleIcon: GoogleIcon[] = [
+  {
+    imageUrl: "/Google.svg",
+    title: "Google",
+  },
+];
