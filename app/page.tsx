@@ -83,16 +83,6 @@ const Home = async () => {
           </div>
         </div>
       </div>
-      <footer>
-        <Card>
-          <CardContent className="px-5 py-6">
-            <p className="text-sm text-center  text-gray-400">
-              @Copyright{" "}
-              <span className="font-bold">(ainda não escolhemas saporra)</span>
-            </p>
-          </CardContent>
-        </Card>
-      </footer>
     </div>
   );
 };
