@@ -3,7 +3,6 @@ import { Input } from "./_components/ui/input";
 import { Button } from "./_components/ui/button";
 import { SearchIcon } from "lucide-react";
 import Image from "next/image";
-import { Card, CardContent } from "./_components/ui/card";
 import "./globals.css";
 import { db } from "./_lib/prisma";
 import BarbershopItem from "./_components/barbershop-item";
