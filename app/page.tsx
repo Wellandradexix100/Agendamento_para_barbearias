@@ -7,22 +7,26 @@ import { quickSearchOptions } from "./_constants/search";
 import BookingItem from "./_components/booking-item";
 import Search from "./_components/search";
 import Link from "next/link";
+import { User } from "@prisma/client";
 
-const Home = async () => {
+interface ServiceItemProps {
+  user: Pick<User, "name">;
+}
+
+const Home = async ({ user }: ServiceItemProps) => {
   const barbershops = await db.barbershop.findMany({});
   const popularBarbershops = await db.barbershop.findMany({
     orderBy: {
       name: "desc",
     },
   });
-
   return (
     <div>
       {/* header */}
       <Header />
       <div className="p-5">
         {/* TEXTO */}
-        <h2 className="text-xl font-bold">Olá, Wellington!</h2>
+        <h2 className="text-xl font-bold">{String(user)}</h2>
         <p>Segunda-feira, 05 de agosto.</p>
 
         {/* BUSCA */}
