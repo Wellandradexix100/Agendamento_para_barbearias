@@ -50,11 +50,6 @@ Bem-vindo ao nosso inovador sistema de **agendamento de barbearias e clientes**!
 - **TypeScript**
 - **JavaScript***  
 
-### **Personalizações e Extensões**
-
-- **[Inserir detalhamento de personalizações]**
-- **[Inserir extensões planejadas ou futuras funcionalidades]**
-
 ## 📞 **Entre em Contato**
 wellandrade85@gmail.com
 81998112410
