@@ -40,17 +40,19 @@ Bem-vindo ao nosso inovador sistema de **agendamento de barbearias e clientes**!
 
 ### **Tecnologias Utilizadas**
 
-- **Backend:** 
-- **Frontend:** 
-- **Banco de Dados:** 
-
-### **Personalizações e Extensões**
-
-- **[Inserir detalhamento de personalizações]**
-- **[Inserir extensões planejadas ou futuras funcionalidades]**
+- **Next.js**
+- **React.js**
+- **PostgreSQL**
+- **Tailwind CSS**
+- **Prisma**
+- **Node.js**
+- **ShadCN**
+- **TypeScript**
+- **JavaScript***  
 
 ## 📞 **Entre em Contato**
-
+wellandrade85@gmail.com
+81998112410
 
 
 *Desenvolvido com 💡 e 🚀 por [Wellandrade].*
