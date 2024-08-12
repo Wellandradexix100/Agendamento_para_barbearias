@@ -14,7 +14,6 @@ import SingInDialog from "./sign-in-dialog";
 const SidebarSheet = () => {
   const { data } = useSession();
   const handleLogoutClick = () => signOut();
-
   console.log(data?.user);
 
   return (
@@ -61,10 +60,14 @@ const SidebarSheet = () => {
             </Link>
           </Button>
         </SheetClose>
-        <Button className="justify-start gap-2" variant="ghost">
-          <CalendarIcon size={18} />
-          Agendamentos
-        </Button>
+        {data?.user && ( // Condicional para mostrar "Agendamentos" apenas quando o usuário está logado
+          <Button className="justify-start gap-2" variant="ghost" asChild>
+            <Link href="/bookings">
+              <CalendarIcon size={18} />
+              Agendamentos
+            </Link>
+          </Button>
+        )}
       </div>
 
       <div className="flex flex-col gap-2 border-b border-solid py-5">
@@ -85,7 +88,7 @@ const SidebarSheet = () => {
         ))}
       </div>
 
-      {data?.user && (
+      {data?.user && ( // Exibindo a opção de logout apenas quando o usuário está logado
         <div className="flex flex-col gap-2 py-5">
           <Button
             variant="ghost"
