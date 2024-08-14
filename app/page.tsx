@@ -13,11 +13,7 @@ import { authOptions } from "./_lib/auth";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 
-interface ServiceItemProps {
-  user: Pick<User, "name">;
-}
-
-const Home = async ({ user }: ServiceItemProps) => {
+const Home = async () => {
   const session = await getServerSession(authOptions);
   const barbershops = await db.barbershop.findMany({});
   const popularBarbershops = await db.barbershop.findMany({
