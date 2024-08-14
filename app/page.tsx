@@ -10,6 +10,8 @@ import Link from "next/link";
 import { User } from "@prisma/client";
 import { getServerSession } from "next-auth";
 import { authOptions } from "./_lib/auth";
+import { format } from "date-fns";
+import { ptBR } from "date-fns/locale";
 
 interface ServiceItemProps {
   user: Pick<User, "name">;
@@ -49,14 +51,22 @@ const Home = async ({ user }: ServiceItemProps) => {
       <Header />
       <div className="p-5">
         {/* TEXTO */}
-        <h2 className="text-xl font-bold">{String(user)}</h2>
-        <p>Segunda-feira, 05 de agosto.</p>
-
+        <h2 className="text-xl font-bold capitalize">
+          Olá, {session?.user ? session.user.name : "Bem vindo!"}
+        </h2>
+        <p>
+          <span className="capitalize">
+            {format(new Date(), "EEEE, dd ", { locale: ptBR })}
+          </span>
+          de
+          <span className="capitalize">
+            {format(new Date(), " ' ' MMMM", { locale: ptBR })}
+          </span>
+        </p>
         {/* BUSCA */}
         <div className="mt-6">
           <Search />
         </div>
-
         {/* BUSCA RÁPIDA */}
         <div className="mt-6 flex gap-3 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
           {quickSearchOptions.map((option) => (
@@ -78,7 +88,6 @@ const Home = async ({ user }: ServiceItemProps) => {
             </Button>
           ))}
         </div>
-
         {/* IMAGEM */}
         <div className="relative mt-6 h-[150px] w-full">
           <Image
@@ -88,18 +97,15 @@ const Home = async ({ user }: ServiceItemProps) => {
             className="rounded-xl object-cover"
           />
         </div>
-
         {/* AGENDAMENTO */}
         <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
           Agendamentos
         </h2>
-
         <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden py-2">
           {confirmedBookings.map((booking) => (
             <BookingItem key={booking.id} booking={booking} />
           ))}
         </div>
-
         <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
           Recomendados
         </h2>
@@ -108,7 +114,6 @@ const Home = async ({ user }: ServiceItemProps) => {
             <BarbershopItem key={barbershop.id} barbershop={barbershop} />
           ))}
         </div>
-
         <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
           Populares
         </h2>
