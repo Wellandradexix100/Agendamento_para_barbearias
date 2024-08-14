@@ -7,7 +7,6 @@ import { quickSearchOptions } from "./_constants/search";
 import BookingItem from "./_components/booking-item";
 import Search from "./_components/search";
 import Link from "next/link";
-import { User } from "@prisma/client";
 import { getServerSession } from "next-auth";
 import { authOptions } from "./_lib/auth";
 import { format } from "date-fns";
